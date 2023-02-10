@@ -10,7 +10,7 @@ import java.util.Map;
 public class Abc {
     @Getter
     private Integer number;
-    private LinkedHashMap<BigDecimal,Boolean>linkedHashMap;
+    private LinkedHashMap<BigDecimal, Boolean> linkedHashMap;
     protected static String id;
 
 
@@ -20,9 +20,9 @@ public class Abc {
     }
 
     private void setNumber(Integer number) {
-        if (number<-18){
+        if (number < -18) {
             throw new RuntimeException();
-        }else{
+        } else {
             this.number = number;
         }
 
@@ -30,5 +30,13 @@ public class Abc {
 
     public Abc(Integer number) {
         setNumber(number);
+    }
+
+    public void method(int num) {
+
+    }
+
+    public void method(int num,int num2){
+
     }
 }
